@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Nurintan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #1D3557;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #D8F3DC;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #1D3557;
+      font-weight: bold;
+    }
+
+    .hero,
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px 30px;
+      align-items: center;
+      justify-content: center;
+      background-color: #D8F3DC;
+      gap: 40px;
+    }
+
+    .hero-text,
+    .text {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .hero-text h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 10px 0 0;
+      color: #00796B;
+    }
+
+    .hero-text p,
+    .text p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .hero-text button,
+    .text a.button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      border: 2px solid #1D3557;
+      background: transparent;
+      color: #1D3557;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .hero-text button:hover,
+    .text a.button:hover {
+      background-color: #1D3557;
+      color: white;
+    }
+
+    .image {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .section:nth-of-type(even) {
+      flex-direction: row-reverse;
+      background-color: #ffffff;
+    }
+
+    .skills-section {
+      padding: 50px 30px;
+      background-color: #CAF0F8;
+      text-align: center;
+    }
+
+    .skill-block {
+      margin: 30px auto;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .skill-block h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .skill-block p {
+      font-size: 15px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 50px 30px;
+      background-color: #E0F7FA;
+    }
+
+    .contact a {
+      font-weight: bold;
+      font-size: 18px;
+      color: #1D3557;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #D8F3DC;
+      text-align: center;
+      padding: 20px 30px;
+      font-size: 14px;
+    }
+
+    footer small {
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .hero,
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section:nth-of-type(even) {
+        flex-direction: column;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .image {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-links">
+      <a href="#contact">Kontak</a>
+      <a href="https://www.instagram.com/ntan_n18?igsh=MWMyc2J4eWh1NnJnZg==" target="_blank">Instagram</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>halo, saya<br>Nurintan</h1>
+      <h2>Pecinta Laut & Fotografer Pantai</h2>
+      <p>Berbasis di Sulawesi Tengah, Indonesia</p>
+      <p>Saya sangat mencintai laut, pantai, karang, dan kehidupan laut yang menakjubkan. Melalui fotografi, saya ingin menangkap keindahan dan keajaiban dunia bawah laut serta menginspirasi pelestarian lingkungan laut.</p>
+      <button onclick="location.href='mailto:nurintanmuhidin05@gmail.com'">Hubungi Saya</button>
+    </div>
+    <div class="image">
+      <img src="ntann.jpeg" alt="Pantai Laut">
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <div class="skill-block">
+      <h3>01_fotografi pantai & laut</h3>
+    </div>
+    <div class="skill-block">
+      <h3>02_dokumentasi terumbu karang</h3>
+    </div>
+    <div class="skill-block">
+      <h3>03_proyek konservasi laut</h3>
+    </div>
+    <div class="skill-block">
+      <h3>04_ekowisata bahari</h3>
+    </div>
+  </section>
+>
+  <section class="section">
+    <div class="text">
+      <div class="project-title">Menangkap keindahan pantai dan karang</div>
+      <p>Proyek terbaru ini merupakan eksplorasi visual yang bertujuan menangkap harmoni sempurna antara deburan ombak, pasir emas, dan formasi karang yang menjulang anggun di tepian laut.</p>
+    </div>
+    <div class="image">
+      <img src="KARANG.jpeg" alt="Pantai dan Karang">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text">
+      <div class="project-title">Dokumentasi kehidupan laut yang menakjubkan</div>
+      <p>Proyek jangka panjang ini merupakan upaya serius dalam mendokumentasikan keragaman hayati bawah laut, dan menyuarakan pentingnya pelestarian lingkungan laut.</p>
+    </div>
+    <div class="image">
+      <img src="BTL.jpeg" alt="Ikan di laut">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text">
+      <div class="project-title">Proyek konservasi laut dan ekowisata</div>
+      <p>Proyek ini menghasilkan dokumentasi visual konservasi laut & pengembangan ekowisata bahari yang berkelanjutan bersama komunitas lokal.</p>
+      <a href="#" class="button">Pelajari Lebih Lanjut</a>
+    </div>
+    <div class="image">
+      <img src="PERAHU.jpeg" alt="Nelayan di perahu">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p>Ada pertanyaan? <br><a href="mailto:nurintanmuhidin05@gmail.com">Hubungi saya di sini</a></p>
+    <p><strong>Email:</strong> nurintanmuhidin05@gmail.com</p>
+  </section>
+
+  <footer>
+    <small>photography by Nurintan Muhidin</small>
+  </footer>
+
+</body>
+</html>
